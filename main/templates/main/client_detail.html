@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="col-12">
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Информация о клиенте</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <td>Имя</td>
+                            <td>{{ object.first_name|title }}</td>
+                        </tr>
+                        <tr>
+                            <td>Фамилия</td>
+                            <td>{{ object.last_name|title }}</td>
+                        </tr>
+                        <tr>
+                            <td>Почта</td>
+                            <td>{{ object.email }}</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="#" />
+        </div>
+    </div>
+</div>
+{% endblock %}

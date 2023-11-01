@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<section id="hero" class="d-flex align-items-end">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <form method="post" enctype="multipart/form-data" class="row">
+
+
+
+            <div class="col-12">
+                <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Parameters
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary">
+                             {% if object %}
+                            Сохранить
+                        {% else %}
+                            Создание
+                            {% endif %}
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

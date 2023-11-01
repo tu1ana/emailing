@@ -1,0 +1,37 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<!--<div class="col-12">-->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Информация о рассылке</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <td>Тема сообщения</td>
+                            <td>{{ object.subject }}</td>
+                        </tr>
+                        <tr>
+                            <td>Содержание</td>
+                            <td>{{ object.body }}</td>
+                        </tr>
+                        <tr>
+                            <td>Кому отправлена</td>
+                            <td>{{ object.client }}</td>
+                        </tr>
+                        <tr>
+                            <td>Время и статус</td>
+                            <td>{{ object.emailing }}</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    </div>
+<!--</div>-->
+{% endblock %}

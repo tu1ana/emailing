@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<section id="hero" class="d-flex align-items-end">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+<div class="row">
+<!--{% if perms.dogs_app.add_dog %}-->
+<div class="col-12 mb-5">
+</div>
+<!--{% endif %}-->
+{% for object in object_list %}
+<div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+        <div class="card-body">
+            <p class="card-text">{{ object.email }}</p>
+            <span class="text-muted">{{ object.first_name }}</span><br>
+            <span class="text-muted">{{ object.last_name }}</span>
+            <span class="text-muted">{{ object.comment }}</span>
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-link" href="{% url 'main:client_update' object.pk %}">Изменить</a>
+            <a class="btn btn-outline-danger float-right" href="{% url 'main:client_delete' object.pk %}">Удалить</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+    </div>
+</section>
+{% endblock %}

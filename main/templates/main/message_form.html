@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<section id="hero" class="d-flex align-items-end">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <form method="post" enctype="multipart/form-data" class="row">
+            <!--    <div class="col-6">-->
+            <!--        <div class="card">-->
+            <!--            <div class="card-header">-->
+            <!--                Сообщение-->
+            <!--            </div>-->
+            <!--            <div class="card-body">-->
+            <!--                {{ formset.management_form }}-->
+            <!--                {% for form in formset.forms %}-->
+            <!--                {{ form.as_p }}-->
+            <!--                {% if not forloop.last %}-->
+            <!--                <hr>-->
+            <!--                {% endif %}-->
+            <!--                {% endfor %}-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">Параметры расссылки</div>
+                    <div class="card-body">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <p><a href="{% url 'main:emailing_create' %}">Создать</a></p>
+                        <button type="submit" class="btn btn-outline-success">
+                            {% if object %}
+                            Сохранить
+                            {% else %}
+                            Добавить рассылку
+                            {% endif %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
