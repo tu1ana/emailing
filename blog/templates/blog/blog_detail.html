@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<section id="hero" class="d-flex align-items-end">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="50">
+        <div class="container">
+            <div class="row">
+                <div class="container" data-aos="fade-up">
+                    <div class="col-6">
+                        <div class="section-title">
+                            <h2>{{ object.title }}</h2>
+                            <p>{{ object.article }}</p>
+                            <p>* * *</p>
+                            <p>Дата публикации: {{ object.pub_date }}</p>
+                            <p>Просмотры: {{ object.views_count }}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img src="/media/{{ object.image }}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
