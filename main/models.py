@@ -51,6 +51,12 @@ class Emailing(models.Model):
         verbose_name = 'Рассылка'
         verbose_name_plural = 'Рассылки'
 
+        permissions = [
+            ('change_status', 'Can change status'),
+            ('set_start_time', 'Can set start time'),
+            ('set_finish_time', 'Can set finish time')
+        ]
+
 
 class Message(models.Model):
     subject = models.CharField(max_length=150, verbose_name='Тема сообщения')
@@ -70,6 +76,11 @@ class Message(models.Model):
     class Meta:
         verbose_name = 'Сообщение'
         verbose_name_plural = 'Сообщения'
+
+        permissions = [
+            ('view_all_messages', 'Can see all messages'),
+            ('deactivate', 'Can deactivate messages')
+        ]
 
 
 class Log(models.Model):
