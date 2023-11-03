@@ -31,4 +31,4 @@ class BlogDetailView(DetailView):
 class BlogCreateView(LoginRequiredMixin, CreateView):
     model = Blog
     form_class = BlogForm
-    success_url = reverse_lazy('blog:blog_list')
+    success_url = reverse_lazy('blog:create_blog')
