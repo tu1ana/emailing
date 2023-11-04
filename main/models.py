@@ -11,6 +11,9 @@ class Client(models.Model):
     last_name = models.CharField(max_length=100, verbose_name='Фамилия')
     comment = models.TextField(verbose_name='Комментарий', **NULLABLE)
 
+    auth_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='clients', on_delete=models.SET_NULL,
+                                  **NULLABLE, verbose_name='Пользователь')
+
     def __str__(self):
         return f'{self.first_name} {self.last_name} ({self.email})'
 
