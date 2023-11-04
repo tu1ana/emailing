@@ -62,10 +62,10 @@ class Message(models.Model):
     subject = models.CharField(max_length=150, verbose_name='Тема сообщения')
     body = models.TextField(verbose_name='Текст сообщения')
 
-    client = models.ManyToManyField(Client, verbose_name='Клиент')
+    client = models.ManyToManyField(Client, related_name='messages', verbose_name='Клиент')
     emailing = models.ForeignKey(Emailing, on_delete=models.CASCADE, verbose_name='Рассылка')
 
-    auth_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE, verbose_name='Пользователь')
+    auth_user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='messages', on_delete=models.SET_NULL, **NULLABLE, verbose_name='Пользователь')
 
     is_active = models.BooleanField(default=True, verbose_name='Активная')
     job_id = models.CharField(max_length=250, default='', verbose_name='ID задачи')
