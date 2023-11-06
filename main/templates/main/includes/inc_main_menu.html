@@ -1,37 +1,31 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="{% url 'main:index' %}">YouSend</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          {% if user.is_authenticated %}
-          <li class="dropdown"><a href="{% url 'main:list' %}"><span>Мои рассылки</span> <i class="bi bi-chevron-down"></i></a>
+        <h1 class="logo"><a href="{% url 'main:index' %}">YouSend</a></h1>
+        <nav id="navbar" class="navbar">
             <ul>
-              <li><a href="{% url 'users:profile' %}">Профиль</a></li>
-                <li class="dropdown"><a href="{% url 'main:client_list' %}"><span>Клиенты</span></a>
+                {% if user.is_authenticated %}
+                <li class="dropdown"><a href="{% url 'users:profile' %}"><span>Профиль</span> <i
+                        class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li class="dropdown"><a href="{% url 'users:logout' %}"><span>Выйти</span></a>
+                        </li>
+                    </ul>
+                </li>
+                {% else %}
+                <li><a href="{% url 'users:login' %}">Войти</a></li>
+                <li><a href="{% url 'users:register' %}">Регистрация</a></li>
+                {% endif %}
+                <li><a href="{% url 'main:index' %}">Главная</a></li>
+                <li><a href="{% url 'main:list' %}">Рассылки</a></li>
+                <li><a href="{% url 'main:client_list' %}">Клиенты</a></li>
+                <li><a href="{% url 'users:user_list' %}">Пользователи</a></li>
+                <li><a href="{% url 'blog:blog_list' %}">Блог</a></li>
+                <li><a href="{% url 'main:contact' %}">Контакты</a></li>
 
-              <li class="dropdown"><a href="{% url 'users:logout' %}"><span>Выйти</span></a>
-              </li>
+                <li><a class="getstarted scrollto" href="#about">Okaaay, let's go.</a></li>
             </ul>
-          </li>
-          {% else %}
-              <li><a href="{% url 'users:login' %}">Войти</a></li>
-              <li><a href="{% url 'users:register' %}">Регистрация</a></li>
-              {% endif %}
-          <li><a href="{% url 'main:index' %}">Главная</a></li>
-<!--          <li><a class="nav-link scrollto" href="{% url 'main:list' %}">Рассылки</a></li>-->
-          <li><a href="{% url 'blog:blog_list' %}">Блог</a></li>
-          <li><a href="{% url 'main:contact' %}">Контакты</a></li>
-
-          <li><a class="getstarted scrollto" href="#about">Okaaay, let's go.</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
     </div>
-  </header>
+</header>
 
-<!--<a class="nav-link scrollto" href="#contact">Contact</a>-->
