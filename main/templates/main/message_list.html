@@ -2,44 +2,32 @@
 
 {% block content %}
 <section id="hero" class="d-flex align-items-end">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-<div class="section-title">
-          <h2>Рассылки</h2>
-          <p></p>
-<div class="row">
-<div class="col-12 mb-5">
-{% if user.is_authenticated %}
-        <a class="btn btn-primary" href="{% url 'main:create' %}">Создать</a>
-    {% endif %}
-</div>
-{% for object in object_list %}
-<div class="col-md-4">
-    <div class="card mb-4 box-shadow">
-        <div class="card-body">
-            <p class="card-text">Тема сообщения: {{ object.subject }}</p>
-            <p class="card-text">Текст сообщения: {{ object.body }}</p>
-            <p class="card-text">{{ object.is_active }}</p>
-<!--            <span class="text-muted">{{ object.birth_date|default:'-' }}</span><br>-->
-<!--            <span class="text-muted">{{ object.owner|default:'Без хозяина' }}</span>-->
+    <div class="container position-relative">
+        {% if user.is_authenticated %}
+        <a href="{% url 'main:create' %}" class="btn-get-started">Создать рассылку</a>
+        {% endif %}
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h3 class="my-0 fw-normal">Рассылки</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <tr>
+                        <th>ID</th>
+                        <th>Тема сообщения</th>
+                        <th>Текст сообщения</th>
+                        <th>Статус</th>
+                    </tr>
+                    {% for object in object_list %}
+                    <tr>
+                        <td><a href="{% url 'main:view' object.pk %}">{{ object.pk }}</a></td>
+                        <td><a href="{% url 'main:view' object.pk %}">{{ object.subject|truncatechars:30 }}</a></td>
+                        <td>{{ object.body|truncatechars:50 }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
         </div>
-        <div class="card-footer">
-            <a class="btn btn-link" href="{% url 'main:update' object.pk %}">Изменить</a>
-            <a class="btn btn-outline-danger float-right" href="{% url 'main:delete' object.pk %}">Удалить</a>
-        </div>
-    </div>
-</div>
-{% endfor %}
-</div>
     </div>
 </section>
 {% endblock %}
-
-<!--{% url 'main:create_emailing' %}{% url 'main:create_emailing' %}-->
-<!--{% url 'main:update_emailing' object.pk %}-->
-<!--{% url 'main:delete_emailing' object.pk %}-->
-<!--                 src="/media/{{ object.photo }}"-->
-<!--<span class="text-muted">{{ object.birth_date|default:"-" }}</span><br>-->
-
-<!--<div class="position-relative">-->
-<!--    <div class="position-absolute top-50 start-50 translate-middle">-->
-
