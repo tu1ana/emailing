@@ -20,14 +20,16 @@ def send_message(message: Message):
                 recipient_list=[client.email],
                 fail_silently=False
             )
-            log = Log.objects.create(server_response='200',
-                                          status='success',
-                                          message=message)
+            log = Log.objects.create(last_attempt=datetime.now(),
+                                     server_response='Сообщение успешно отправлено',
+                                     status='Success',
+                                     message=message)
             log.save()
         except SMTPException as e:
-            log = Log.objects.create(server_response=e.args,
-                                          status='error',
-                                          message=message)
+            log = Log.objects.create(last_attempt=datetime.now(),
+                                     server_response=e.args,
+                                     status='Error',
+                                     message=message)
             log.save()
 
 
@@ -49,7 +51,7 @@ def create_task(scheduler, message: Message):
         trigger = CronTrigger(second=start_time.second,
                               minute=start_time.minute,
                               hour=start_time.hour,
-                              day_of_week=start_time.weekday(),
+                              day_of_week=start_time.weekday,
                               start_date=start_time,
                               end_date=finish_time
                               )
@@ -57,8 +59,8 @@ def create_task(scheduler, message: Message):
         trigger = CronTrigger(second=start_time.second,
                               minute=start_time.minute,
                               hour=start_time.hour,
-                              day_of_week=start_time.weekday(),
-                              week=start_time.week(),
+                              day_of_week=start_time.weekday,
+                              week=start_time.week,
                               start_date=start_time,
                               end_date=finish_time
                               )
