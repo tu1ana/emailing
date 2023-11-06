@@ -42,59 +42,11 @@ class Command(BaseCommand):
         scheduler.add_job(
             launch_scheduler,
             kwargs={'scheduler': scheduler},
-            trigger=CronTrigger(day="*"),
+            trigger=CronTrigger(hour="*"),
             id="my_job",  # The `id` assigned to each job MUST be unique
             max_instances=1,
             replace_existing=True,
         )
-        # logger.info(f'New added {id}')
-
-        # for message in get_emailing():
-        #     clients = list(message.client.all())
-        #
-        #     if message.emailing.sending_time:
-        #         sending_time = message.emailing.sending_time
-        #     else:
-        #         sending_time = datetime.now()
-        #
-        #     if message.emailing.finish_time:
-        #         finish_time = message.emailing.finish_time
-        #     else:
-        #         finish_time = sending_time + timedelta(days=365)
-        #
-        #     if message.emailing.freq == 'OAD':
-        #         trigger = CronTrigger(second=sending_time.second,
-        #                               minute=sending_time.minute,
-        #                               hour=sending_time.hour,
-        #                               start_date=sending_time,
-        #                               end_date=finish_time
-        #                               )
-        #     elif message.emailing.freq == 'OAW':
-        #         trigger = CronTrigger(second=sending_time.second,
-        #                               minute=sending_time.minute,
-        #                               hour=sending_time.hour,
-        #                               day_of_week=sending_time.weekday(),
-        #                               start_date=sending_time,
-        #                               end_date=finish_time
-        #                               )
-        #     else:
-        #         trigger = CronTrigger(second=sending_time.second,
-        #                               minute=sending_time.minute,
-        #                               hour=sending_time.hour,
-        #                               day_of_week=sending_time.weekday(),
-        #                               week=sending_time.week(),
-        #                               start_date=sending_time,
-        #                               end_date=finish_time
-        #                               )
-        #     scheduler.add_job(
-        #         send_emailing,
-        #         kwargs={'message': message, 'clients': clients},
-        #         trigger=trigger,
-        #         id=f'{message}',
-        #         max_instances=1,
-        #         replace_existing=True
-        #     )
-        #     logger.info(f'New added {id}')
 
         scheduler.add_job(
             delete_old_job_executions,
