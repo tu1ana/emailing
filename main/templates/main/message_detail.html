@@ -1,37 +1,76 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
-<!--<div class="col-12">-->
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">Информация о рассылке</h3>
-                </div>
-                <div class="card-body">
-                    <table class="table">
-                        <tr>
-                            <td>Тема сообщения</td>
-                            <td>{{ object.subject }}</td>
-                        </tr>
-                        <tr>
-                            <td>Содержание</td>
-                            <td>{{ object.body }}</td>
-                        </tr>
-                        <tr>
-                            <td>Кому отправлена</td>
-                            <td>{{ object.client }}</td>
-                        </tr>
-                        <tr>
-                            <td>Время и статус</td>
-                            <td>{{ object.emailing }}</td>
-                        </tr>
-                    </table>
+<section id="hero" class="d-flex align-items-end">
+    <div class="container position-relative">
+        <!--<div class="col-12">-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title">Информация о рассылке</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Кому</th>
+                                <th>Тема сообщения</th>
+                                <th>Содержание</th>
+                                <th>Время начала</th>
+                                <th>Время завершения</th>
+                                <th>Периодичность</th>
+                                <th>Статус рассылки</th>
+                            </tr>
+                            <tr>
+                                <td>{% for client_item in object.client.all %}
+                                    <br>- {{ client_item.first_name }} {{ client_item.last_name }} ({{ client_item.email
+                                    }})
+                                    {% endfor %}
+                                </td>
+                                <td>{{ object.subject }}</td>
+                                <td>{{ object.body }}</td>
+                                <td>{{ object.emailing.start_time }}</td>
+                                <td>{{ object.emailing.finish_time }}</td>
 
+                                {% if object.emailing.freq in 'DY' %}
+                                <td>ежедневная</td>
+                                {% elif object.emailing.freq in 'WK' %}
+                                <td>еженедельная</td>
+                                {% else %}
+                                <td>ежемесячная</td>
+                                {% endif %}
+
+                                {% if object.emailing.status in 'CREATED' %}
+                                <td>создана</td>
+                                {% elif object.emailing.status in 'STARTED' %}
+                                <td>запущена</td>
+                                {% else %}
+                                <td>завершена</td>
+                                {% endif %}
+                            </tr>
+
+                        </table>
+                    </div>
                 </div>
-                <div class="card-footer"></div>
+                <div class="btn-group">
+                    <a href="{% url 'main:update' object.pk %}" type="button"
+                       class="btn btn-sm btn-outline-secondary">Редактировать</a>
+                    <a href="{% url 'main:delete' object.pk %}" type="button"
+                       class="btn btn-sm btn-outline-danger">Удалить</a>
+                    <a href="{% url 'main:log_list' object.pk %}" type="button"
+                       class="btn btn-sm btn-outline-secondary">Логи</a>
+                    <a href="{% url 'main:list' %}" type="button"
+                       class="btn btn-sm btn-outline-secondary">Назад к списку</a>
+                </div>
+                {% if object.is_active %}
+                <a href="{% url 'main:toggle_activity_message' object.pk %}"
+                   class="btn btn-sm btn-outline-danger position-absolute bottom--10 end-0">Приостановить</a>
+                {% else %}
+                <a href="{% url 'main:toggle_activity_message' object.pk %}"
+                   class="btn btn-sm btn-outline-primary position-absolute bottom--10 end-0">Запустить</a>
+                {% endif %}
             </div>
         </div>
     </div>
-<!--</div>-->
+</section>
 {% endblock %}
