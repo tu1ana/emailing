@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from apscheduler.schedulers.background import BackgroundScheduler
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
@@ -74,7 +76,7 @@ class MessageCreateView(LoginRequiredMixin, CreateView):
         self.object.auth_user = self.request.user
         self.object.save()
 
-        log = Log.objects.create(server_response='-', status='создана', message=self.object)
+        log = Log.objects.create(last_attempt=datetime.now(), status='создана', server_response='-', message=self.object)
         log.save()
 
         launch_scheduler(scheduler)
