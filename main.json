@@ -1,0 +1,589 @@
+[
+  {
+    "model": "main.client",
+    "pk": 21,
+    "fields": {
+      "email": "nomoremaybe@yandex.ru",
+      "first_name": "Michael",
+      "last_name": "Scott",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 22,
+    "fields": {
+      "email": "hikkonki@gmail.com",
+      "first_name": "Dwight",
+      "last_name": "Schrute",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 23,
+    "fields": {
+      "email": "qa@dundermifflin.com",
+      "first_name": "Creed",
+      "last_name": "Bratton",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 24,
+    "fields": {
+      "email": "narddog@dundermifflin.com",
+      "first_name": "Andy",
+      "last_name": "Bernard",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 25,
+    "fields": {
+      "email": "s.hudson@dundermifflin.com",
+      "first_name": "Stanley",
+      "last_name": "Hudson",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 26,
+    "fields": {
+      "email": "pam@dundermifflin.com",
+      "first_name": "Pam",
+      "last_name": "Beesly",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 27,
+    "fields": {
+      "email": "oscar@dundermifflin.com",
+      "first_name": "Oscar",
+      "last_name": "Martinez",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 28,
+    "fields": {
+      "email": "marriedtothesenator@dundermifflin.com",
+      "first_name": "Angela",
+      "last_name": "Martin",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 29,
+    "fields": {
+      "email": "meredith@dundermifflin.com",
+      "first_name": "Meredith",
+      "last_name": "Palmer",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.client",
+    "pk": 30,
+    "fields": {
+      "email": "d.philbin@dundermifflin.com",
+      "first_name": "Darryl",
+      "last_name": "Philbin",
+      "comment": ""
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 1,
+    "fields": {
+      "sending_time": "2023-10-31T06:00:00Z",
+      "finish_time": "2023-10-31T12:00:00Z",
+      "freq": "OAD",
+      "status": "CREATED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 2,
+    "fields": {
+      "sending_time": "2023-11-01T12:00:00Z",
+      "finish_time": "2023-12-02T00:00:00Z",
+      "freq": "OAW",
+      "status": "CREATED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 3,
+    "fields": {
+      "sending_time": "2023-10-24T12:00:00Z",
+      "finish_time": "2023-10-31T00:00:00Z",
+      "freq": "OAD",
+      "status": "STARTED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 4,
+    "fields": {
+      "sending_time": "2024-02-07T06:00:00Z",
+      "finish_time": "2024-02-09T12:00:00Z",
+      "freq": "OAW",
+      "status": "CREATED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 5,
+    "fields": {
+      "sending_time": "2023-10-31T12:56:16Z",
+      "finish_time": "2023-12-02T00:00:00Z",
+      "freq": "OAW",
+      "status": "CREATED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 6,
+    "fields": {
+      "sending_time": "2023-11-14T06:00:00Z",
+      "finish_time": "2023-12-02T12:00:00Z",
+      "freq": "OAD",
+      "status": "CREATED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 7,
+    "fields": {
+      "sending_time": "2023-10-24T06:00:00Z",
+      "finish_time": "2023-10-31T00:00:00Z",
+      "freq": "OAD",
+      "status": "STARTED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 8,
+    "fields": {
+      "sending_time": "2023-10-24T06:00:00Z",
+      "finish_time": "2023-10-29T00:00:00Z",
+      "freq": "OAD",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 9,
+    "fields": {
+      "sending_time": "2023-10-01T06:00:00Z",
+      "finish_time": "2023-10-31T00:00:00Z",
+      "freq": "OAW",
+      "status": "STARTED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 10,
+    "fields": {
+      "sending_time": "2023-10-02T10:35:19Z",
+      "finish_time": "2023-10-29T10:35:26Z",
+      "freq": "OAW",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 11,
+    "fields": {
+      "sending_time": "2023-10-06T06:00:00Z",
+      "finish_time": "2023-10-30T00:00:00Z",
+      "freq": "OAD",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 12,
+    "fields": {
+      "sending_time": "2023-10-09T10:39:05Z",
+      "finish_time": "2023-10-29T10:39:29Z",
+      "freq": "OAD",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 13,
+    "fields": {
+      "sending_time": "2023-10-10T10:45:08Z",
+      "finish_time": "2023-10-30T12:00:00Z",
+      "freq": "OAW",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 14,
+    "fields": {
+      "sending_time": "2023-10-13T12:00:00Z",
+      "finish_time": "2023-10-29T10:47:29Z",
+      "freq": "OAD",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 15,
+    "fields": {
+      "sending_time": "2023-10-11T10:55:18Z",
+      "finish_time": "2023-10-14T10:39:29Z",
+      "freq": "OAD",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 16,
+    "fields": {
+      "sending_time": "2023-11-29T06:00:00Z",
+      "finish_time": "2023-11-01T00:00:00Z",
+      "freq": "OAD",
+      "status": "STARTED"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 17,
+    "fields": {
+      "sending_time": "2023-10-02T11:21:07Z",
+      "finish_time": "2023-10-14T11:21:15Z",
+      "freq": "OAD",
+      "status": "COMPLETE"
+    }
+  },
+  {
+    "model": "main.emailing",
+    "pk": 18,
+    "fields": {
+      "sending_time": "2023-10-30T12:51:09Z",
+      "finish_time": "2023-10-30T12:59:23Z",
+      "freq": "OAD",
+      "status": "CREATED"
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 4,
+    "fields": {
+      "subject": "Happy Halloween, everyone.",
+      "body": "Can I speak to you a minute?\r\nUm... yes.\r\nMichael, I really didn't mean to...\r\nHelp me.\r\nI'm sorry?\r\nI want you to role play firing me.\r\nI want you to fire me, and I will take it.\r\nOh, you want me to be you? Yes.\r\nI want you to be me, and I will be Creed.\r\nOh, are you firing Creed? No, no.\r\nNo, that's just first... thing. Can't... in head.\r\nWe should switch seats in order to...\r\nYes, that's a good idea.\r\nExcuse me.\r\nI'm really sorry, but I have to let you go.\r\nAnd it's purely budgetary.\r\nIt's not personal...\r\nI'm gonna kill myself!\r\nWow.\r\nI'm going to kill myself!\r\nAnd it's your fault!\r\nThat's an overreaction.\"",
+      "emailing": 1,
+      "is_active": true,
+      "job_id": "one",
+      "client": [
+        21,
+        22
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 5,
+    "fields": {
+      "subject": "hello this is Michael Scott, I am the regional manager of dundler Mifflin paper products.",
+      "body": "People say IтАЩm the best boss.    They go, \\\"God we've never worked in a place like this before,    youтАЩre hilarious, and you get the best out of us.тАЭ    I think that pretty much sums it up    I found it at Spencer Gifts.    My job is to speak to clients    on the phone about quantities    and type of copier paper.    You know, whether we can supply to them    whether they can pay for it and...    IтАЩm boring myself just talking about this.    He still loves that after seven years!    What?    Nothing    Ok, all right. See you later    All right, take care.    Back to work.    Corporate really doesnтАЩt interfere with me at all, Jan Levinson-Gould    Jan, hello!    I call her Hillary Rodham Clinton, right?    Not to her face because,    not because IтАЩm scared of her, because IтАЩm not    but...    yeah.    All right, was it anything you wanted to add to the agenda?    Me no get an agenda.    IтАЩm sorry, what?    I didnтАЩt get any agenda.    Oh I faxed one overdue this morning.    Really? Cause I didnтАЩtтАжdid we get a fax this morning?    Yeah, the oneтАж    Why isnтАЩt it in my hand?    Because a company runs on efficiency of communication, right?    So whatтАЩs the problem Pam, why I didnтАЩt get it?    You put it in the garbage can that was a special filing cabinet.",
+      "emailing": 2,
+      "is_active": true,
+      "job_id": "two",
+      "client": [
+        21,
+        22
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 6,
+    "fields": {
+      "subject": "S1E1 Pot-Bellied Pigs",
+      "body": "Dr. Katz:    A-and so is that why you stopped smoking?        Bill:    Yeah, well, I think I didn't wanna... you know, my father smoked a lot, and, uh... he's been smoking for years. He tried to quit, you know, he tried everything, you know, he tried hypnosis, and it didn't really take, and then he tried that thing with all the needles, what do they call that... heroin.        Bill:    [beat] He LOVES it.\"",
+      "emailing": 3,
+      "is_active": true,
+      "job_id": "three",
+      "client": [
+        21
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 7,
+    "fields": {
+      "subject": "S1E1 Pot-Bellied Pigs - Bill",
+      "body": "Bill: My teeth are crooked. I was supposed to get braces as a kid, but my parents didn't have enough money... left over from their trip.",
+      "emailing": 4,
+      "is_active": true,
+      "job_id": "four",
+      "client": [
+        27
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 8,
+    "fields": {
+      "subject": "The Fight",
+      "body": "Where is my desk?    That is weird.    This is not funny. This is totally unprofessional.    Okay. Well, you're the one who lost the desk.    I didn't lose my desk.    Calm down. Where was the last place you saw it?    Okay, who moved my desk?    I think you should retrace your steps.    Okay, I am going    to tell Michael    and this entire office will be punished.    Colder.    Warmer.    Little warmer.    There you go. Ooh, warmer.    Warmer.    With enthusiasm. Warmer.    Warmer. Warmer.    Cold. Cold. Cold.    Back up.    Ooh. Ooh. Warmer.    Hot. Red hot. Hot.    Very hot.",
+      "emailing": 5,
+      "is_active": true,
+      "job_id": "five",
+      "client": [
+        22,
+        25
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 9,
+    "fields": {
+      "subject": "Reparations",
+      "body": "I want my money back    I'm down here drowning in your fat    You got me on my knees    Praying for everything you lack    I ain't afraid of you    I'm just a victim of your fears    You cower in your tower    Praying that I'll disappear    I got another plan    One that requires me to stand    On the stage or in the street    Don't need no microphone or beat    And when you hear this song    If you ain't dead sing along    Bang and strum to these here drums    Till you get where you belong    I got a list of demands    Written on the palm of my hands    I ball my fist, and you're gonna    Know where I stand    We living hand to mouth    You wanna be somebody? See somebody?    Try and free somebody?    I got a list of demands    Written on the palm of my hands    I ball my fist, and you're gonna    Know where I stand    We living hand to mouth    Hand to mouth    I wrote a song for you today    While I was sitting in my room    I jumped up on my bed today    And played it on the broom    I didn't think that it would be a song    That you would hear    But when I played it in my head    I made you reappear    I wrote a video for it    And I acted out each part    And then I took your picture out    And taped it to my heart    I've taped you to my heart, dear girl    I've taped you to my heart    And if you pull away from me    You'll tear my life apart    I got a list of demands    Written on the palm of my hands    I ball my fist, and you're gonna    Know where I stand    We living hand to mouth    You wanna be somebody? See somebody?    Try and free somebody?    I got a list of demands    Written on the palm of my hands    I ball my fist, you're gonna    Know where I stand    We living hand to mouth, hand to mouth    Ecstacy, suffering, echinacea, bufferin    We aim to remember what we choose to forget    God's just a baby and her diaper is wet    Call the police    I'm strapped to the teeth    And liable to disregard    Your every belief    Call on the law    I'm fixin' to draw    A line between what is and seems    And call up a brawl    Callin' 'em now    'Cause I'm about to go pow    I'm standing on the threshold    Of the ups and the downs    Call up a truce    Because I'm about to break loose    Protect ya neck 'cause son    I'm breaking out of my noose    I got a list of demands    Written on the palm of my hands    I ball my fist, and you're gonna    Know where I stand    We living hand to mouth    You wanna be somebody? See somebody?    Try and free somebody?    I got a list of demands    Written on the palm of my hands    I ball my fist, and you're gonna    Know where I stand    We living hand to mouth    Hand to mouth    I got a list of demands    Written on the palm of my hands    I ball my fist, and you're gonna    Know where I stand    We living hand to mouth    You wanna be somebody? See somebody?    Try and free somebody?    I got a list of demands    Written on the palm of my hands    I ball my fist, and you're gonna    Know where I stand    We living hand to mouth    Hand to mouth",
+      "emailing": 6,
+      "is_active": true,
+      "job_id": "six",
+      "client": [
+        21
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 10,
+    "fields": {
+      "subject": "Daylight Hours",
+      "body": "I've been burning these same boards    Getting bored and restless    I've got itchy feet    I'm gonna hit the dance floor    Gonna pave the way for a new and better me than I was today    Gonna laugh in face of death    Jump off a cliff like a fool    Too busy staring at the sun but it's fun to be someone else for a change of heart    Of mind of body and soul in time to the pulse of your blood and breath in the neck of the world and all that mother nature can hold and give and love and feel    Don't you get my drift    Did you get the pack    Did you get the set    Did you get the joke    Did you get the outcome    My stuff's bigger than your stuff    Sit back down    Try get your head together    Optimist, did you read that eye towers seizing every second more so every second burning bright lighting the road ahead stepping down the path of many feared    A tread beam lead by the higher mind who will find    That sometimes its best to leave the past behind    Why cry at the moon for what was lost    Too soon the things you didn't do all the forgotten tunes    You gotta remember that everything you own ain't everything you are    This is the third trip in the back of your car filled with memories flashing by like liquid sky    Like electric stars that define everything that we are    I'm getting hypnotized    I've come too far, I was trying too hard now everything keeps shifting in and out of time    Lets venture forth into the unknown    Heads bursting with light blazing through the uncharted streets write our names    Fifty feet high in the minds of all the people we meet    Draw a Halo around your head where god looks down and blesses the genetics of red roof tiles, golden gates, emerald isles and the lands where the sun is slowly rising    Let's dance tonight beneath the Milky Way    Some won't make it back but that's ok    This is a moment that can't be missed so it's worth the risk    Touching the bullets of a silicone century    Nothing now can sully the sound of a drummers beating    The humidity from the sky    For the love    For the beat of the rush of future is ours    Its coming    The future is bright.",
+      "emailing": 7,
+      "is_active": true,
+      "job_id": "seven",
+      "client": [
+        22,
+        25,
+        27,
+        30
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 11,
+    "fields": {
+      "subject": "Boondigga",
+      "body": "Well, the more I try to change    Well, the more I feel the same    Each day like the one before    'Til I don't wanna try no more-ore        When working, tired and your feet are hurtin'    From runnin' all the time, trippin' out, off your mind    Too many times to notice, how the lonely soul is    Love is all alive, it's waiting to, arrive...        Tried everything, then tried it again    Been watching the flame, burn to the end    Been wasting my bones, been takin' my time    A bird from the ashes, burning to fly    Home from the sea, a thief in the night    Like Mr. Apiata, just doing what's right    My brothers and me, my sisters and I    We're waiting to arrive...        When working, tired and your feet are hurtin'    From runnin' all the time, trippin' out, off your mind    Too many times to notice, how the lonely soul is    Love is all alive, it's waiting to, arrive",
+      "emailing": 8,
+      "is_active": false,
+      "job_id": "eight",
+      "client": [
+        24,
+        26,
+        27,
+        28
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 12,
+    "fields": {
+      "subject": "What Month Was Jesus Born In?",
+      "body": "[Verse 1]    What month was Jesus born in?    Last month in the year    What month was Jesus born in?    Last month in the year        [Chorus]    Ooh, Lord, You got January, February, March, oh, Lord    You got April, May and June, Lord    You got July, August, September    October and November    You got twenty-fifth day of December    It's the last month in the year        [Verse 2]    He was born in the outside manger    Last month in the year    He was born in the outside manger    Last month in the year        [Chorus]    Ooh, Lord, You got January, February, March, oh, Lord    You got April, May and June, Lord    You got July, August, September    October and November    You got twenty-fifth day of D╨╡cember    It's the last month in th╨╡ year    [Verse 3]    I'm talkin' 'bout Mary's Baby    Last month in the year    I'm talkin' 'bout Mary's Baby    Last month in the year        [Chorus]    Ooh, Lord, You got January, February, March, oh, Lord    You got April, May and June, Lord    You got July, August, September    October and November    You got twenty-fifth day of December    It's the last month in the year",
+      "emailing": 9,
+      "is_active": true,
+      "job_id": "nine",
+      "client": [
+        21,
+        23,
+        24,
+        25,
+        26
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 13,
+    "fields": {
+      "subject": "Jujalarim",
+      "body": "Cib, cib, jujalarim    Cib, cib, cib, cib, jujalarim    Menim qasang jujalarim    Tuku ipek jujalarim!        Cib, cib, jujalarim    Cib, cib, cib, cib, jujalarim    Menim qasang jujalarim    Tuku ipek jujalarim!        Gozleyirem tez geliniz    Goy cemende dinceliniz!    Gozleyirem tez geliniz    Goy cemende dinceliniz!        Ay menim jujalarim    Ay menim jujalarim    Ay menim jujalarim    Ay menim jujalarim    Menim goycek jujalarim!        Cib, cib, jujalarim    Cib, cib, cib, cib, jujalarim    Menim qasang jujalarim    Tuku ipek jujalarim!        Cib, cib, jujalarim    Cib, cib, cib, cib, jujalarim    Menim qasang jujalarim    Tuku ipek jujalarim!        Gelin size yemek verim    Men su verim,corek verim!    Gelin size yemek verim    Men su verim,corek verim!        Ay menim jujalarim    Ay menim jujalarim    Ay menim jujalarim    Ay menim jujalarim    Menim goycek jujalarim!        Arzum budur,boy atasiz    Ananiza tez catasiz!    Arzum budur,boy atasiz    Ananiza tez catasiz!        Ay menim jujalarim    Ay menim jujalarim    Ay menim jujalarim    Ay menim jujalarim    Menim goycek jujalarim!        Cib, cib, cib",
+      "emailing": 10,
+      "is_active": false,
+      "job_id": "ten",
+      "client": [
+        21,
+        25,
+        27,
+        28,
+        29
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 14,
+    "fields": {
+      "subject": "Rain Rain Go Away",
+      "body": "Rain, rain go away    Come again another day.    Rain, rain go away    Little Johnny wants to play.",
+      "emailing": 11,
+      "is_active": false,
+      "job_id": "eleven",
+      "client": [
+        23,
+        25,
+        27
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 15,
+    "fields": {
+      "subject": "Humpty Dumpty",
+      "body": "Humpty Dumpty sat on a wall.    Humpty Dumpty had a great fall.    All the kingтАЩs horses and all the kingтАЩs men    couldnтАЩt put Humpty together again.        Humpty Dumpty sat on a wall.    Humpty Dumpty had a great fall.    All the kingтАЩs horses and all the kingтАЩs men    couldnтАЩt put Humpty together again.        Humpty Dumpty sat on a wall.    Humpty Dumpty had a great fall.    All the kingтАЩs horses and all the kingтАЩs men    couldnтАЩt put Humpty together again.",
+      "emailing": 12,
+      "is_active": false,
+      "job_id": "twelve",
+      "client": [
+        21,
+        22,
+        23,
+        25,
+        27
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 16,
+    "fields": {
+      "subject": "Guantanamera",
+      "body": "[Verso 1]    Yo soy un hombre sincero    De donde crece la palma    Yo soy un hombre sincero    De donde crece la palma    Y antes de morirme quiero    Echar mis versos del alma        [Estribillo]    Guantanamera    Guajira Guantanamera    Guantanamera    Guajira Guantanamera        [Verso 2]    Mi verso es de un verde claro    Y de un carmin encendido    Mi verso es de un verde claro    Y de un carmin encendido    Mi verso es un ciervo herido    Que busca en el monte amparo        [Estribillo]    Guantanamera    Guajira Guantanamera    Guantanamera    Guajira Guantanamera    You might also like    тАЛclub heaven    Nessa Barrett    Lose Yourself    Eminem    Hotel California    Eagles    [Verso 3]    Cultivo la rosa blanca    En junio como en enero    Cultivo la rosa blanca    En junio como en enero    Para el amigo sincero    Que me da su mano franca        [Estribillo]    Guantanamera    Guajira Guantanamera    Guantanamera    Guajira Guantanamera        [Verso 4]    Y para el cruel que me arranca    El corazon con que vivo    Y para el cruel que me arranca    El corazon con que vivo    Cardo ni ortiga cultivo    Cultivo la rosa blanca        [Estribillo]    Guantanamera    Guajira Guantanamera    Guantanamera    Guajira Guantanamera    [Verso 5]    Con los pobres de la tierra    Quiero yo mi suerte echar    Con los pobres de la tierra    Quiero yo mi suerte echar    El arroyo de la sierra    Me complace mas que el mar        [Estribillo]    Guantanamera    Guajira Guantanamera    Guantanamera    Guajira Guantanamera",
+      "emailing": 13,
+      "is_active": true,
+      "job_id": "thirteen",
+      "client": [
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 17,
+    "fields": {
+      "subject": "The Garden by Mirah",
+      "body": "Oh oh i really wanted that thing    I just want to sing    I love you baby    Won't you bring    All the flowers you    Find out in the garden    Don't tell me the truth    That your heart has hardened        But you don't want me anymore    How can it be    Look what you've done to me        Oh oh    Oh oh the bee does quickly sting    I was wondering    If you could maybe darling    Think? I'd give everything    If you'd grant my love a pardon    And all the fruits    Again would fill the garden        But you don't want me anymore    How can it be?    Look what you've done to me",
+      "emailing": 14,
+      "is_active": false,
+      "job_id": "fourteen",
+      "client": [
+        21,
+        24,
+        26,
+        27
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 18,
+    "fields": {
+      "subject": "The Garden by Llorca",
+      "body": "Oh oh i really wanted that thing    I just want to sing    I love you baby    Won't you bring    All the flowers you    Find out in the garden    Don't tell me the truth    That your heart has hardened        But you don't want me anymore    How can it be    Look what you've done to me        Oh oh    Oh oh the bee does quickly sting    I was wondering    If you could maybe darling    Think? I'd give everything    If you'd grant my love a pardon    And all the fruits    Again would fill the garden        But you don't want me anymore    How can it be?    Look what you've done to me",
+      "emailing": 15,
+      "is_active": false,
+      "job_id": "fifteen",
+      "client": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 19,
+    "fields": {
+      "subject": "Gunga Din song",
+      "body": "Woke up again    To my chagrin    Getting sick and tired of feeling sick and tired again    I tried to write    'Cause, I got the right    To make it look, as if I'm doing something, with my life    Got to, find a vein    It's always, the same    And a drink, to ease the panic and the suffering    I woke, up again    Dreamt of, Gunga Din    Oh, the road is long    If you, stay strong    You're a better man, than I    You've been, beaten and flayed    Probably betrayed    You're a better man, than I    Woke up again    To my, evil twin    That mirror, is fucking ugly and I'm sick and tired of looking at him    Been up, all night    I probably, picked a fight    'Cause I can't help it, I'm a bastard in the morning    So I try, to write    I think, I have the right    A little drinky now and then to help me, just to see the light    Just another day    And it feels like, nothing's changed    Oh, fuck it    Oh, here I go again    Oh, the road is long    If you, stay strong    You're a better man, than I    You've been, beaten and flayed    Probably betrayed    You're a better man, than I    What's the point, in you now?    I can't chase, you know how    Oh, leave me alone    I've got, those Monday blues, straight from Sunday blues    Oh, the road is long    If you, stay strong    You're a better man, than I    You've been, beaten and flayed    Probable betrayed    You're a better man, than I    La la-la la, la la-la la, la la-la la la    La la-la la, la la-la la, la la-la la la    Oh what are you doing, you stupid fucking idiot?    Wake up!    Hey!",
+      "emailing": 16,
+      "is_active": true,
+      "job_id": "sixteen",
+      "client": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 20,
+    "fields": {
+      "subject": "Gunga Din poem",
+      "body": "You may talk oтАЩ gin and beer       When youтАЩre quartered safe out тАЩere,       AnтАЩ youтАЩre sent to penny-fights anтАЩ Aldershot it;    But when it comes to slaughter       You will do your work on water,    AnтАЩ youтАЩll lick the bloominтАЩ boots of тАЩim thatтАЩs got it.       Now in InjiaтАЩs sunny clime,       Where I used to spend my time       A-servinтАЩ of тАЩEr Majesty the Queen,       Of all them blackfaced crew       The finest man I knew    Was our regimental bhisti, Gunga Din,             He was тАШDin! Din! Din!       тАШYou limpinтАЩ lump oтАЩ brick-dust, Gunga Din!          тАШHi! Slippy hitherao          тАШWater, get it! Panee lao,       тАШYou squidgy-nosed old idol, Gunga Din.тАЩ        The uniform тАЩe wore    Was nothinтАЩ much before,    AnтАЩ rather less than тАЩarf oтАЩ that beтАЩind,    For a piece oтАЩ twisty rag       AnтАЩ a goatskin water-bag    Was all the field-equipment тАЩe could find.    When the sweatinтАЩ troop-train lay    In a sidinтАЩ through the day,    Where the тАЩeat would make your bloominтАЩ eyebrows crawl,    We shouted тАШHarry By!тАЩ    Till our throats were bricky-dry,    Then we wopped тАЩim тАЩcause тАЩe couldnтАЩt serve us all.          It was тАШDin! Din! Din!       тАШYou тАЩeathen, where the mischief тАЩave you been?             тАШYou put some juldee in it          тАШOr IтАЩll marrow you this minute       тАШIf you donтАЩt fill up my helmet, Gunga Din!тАЩ        тАЩE would dot anтАЩ carry one    Till the longest day was done;    AnтАЩ тАЩe didnтАЩt seem to know the use oтАЩ fear.    If we charged or broke or cut,    You could bet your bloominтАЩ nut,    тАЩEтАЩd be waitinтАЩ fifty paces right flank rear.       With тАЩis mussick on тАЩis back,    тАЩE would skip with our attack,    AnтАЩ watch us till the bugles made 'Retire,тАЩ       AnтАЩ for all тАЩis dirty тАЩide    тАЩE was white, clear white, inside    When тАЩe went to tend the wounded under fire!             It was тАШDin! Din! Din!тАЩ       With the bullets kickinтАЩ dust-spots on the green.             When the cartridges ran out,          You could hear the front-ranks shout,          тАШHi! ammunition-mules an' Gunga Din!тАЩ        I shanтАЩt forgit the night    When I dropped beтАЩind the fight    With a bullet where my belt-plate should тАЩaтАЩ been.       I was chokinтАЩ mad with thirst,    AnтАЩ the man that spied me first    Was our good old grinninтАЩ, gruntinтАЩ Gunga Din.       тАЩE lifted up my тАЩead,    AnтАЩ he plugged me where I bled,    AnтАЩ тАЩe guv me тАЩarf-a-pint oтАЩ water green.    It was crawlinтАЩ and it stunk,    But of all the drinks IтАЩve drunk,    IтАЩm gratefullest to one from Gunga Din.          It was 'Din! Din! Din!       тАШтАЩEreтАЩs a beggar with a bullet through тАЩis spleen;          тАШтАЩE's chawinтАЩ up the ground,          тАШAnтАЩ тАЩeтАЩs kickinтАЩ all around:       тАШFor GawdтАЩs sake git the water, Gunga Din!тАЩ        тАЩE carried me away    To where a dooli lay,    AnтАЩ a bullet come anтАЩ drilled the beggar clean.       тАЩE put me safe inside,    AnтАЩ just before тАЩe died,    'I тАЩope you liked your drink,тАЩ sez Gunga Din.       So IтАЩll meet тАЩim later on    At the place where тАЩe is goneтАФ    Where itтАЩs always double drill and no canteen.       тАЩEтАЩll be squattinтАЩ on the coals    GivinтАЩ drink to poor damned souls,    AnтАЩ IтАЩll get a swig in hell from Gunga Din!             Yes, Din! Din! Din!       You Lazarushian-leather Gunga Din!          Though IтАЩve belted you and flayed you,             By the livinтАЩ Gawd that made you,       YouтАЩre a better man than I am, Gunga Din!",
+      "emailing": 17,
+      "is_active": false,
+      "job_id": "seveneen",
+      "client": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  },
+  {
+    "model": "main.message",
+    "pk": 21,
+    "fields": {
+      "subject": "Happy Halloween, everyone.",
+      "body": "test",
+      "emailing": 18,
+      "is_active": true,
+      "job_id": "eighteen",
+      "client": [
+        21
+      ]
+    }
+  }
+]
