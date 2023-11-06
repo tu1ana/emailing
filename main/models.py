@@ -42,11 +42,6 @@ class Emailing(models.Model):
     freq = models.CharField(max_length=2, choices=FREQ_CHOICES, verbose_name='Периодичность')
     status = models.CharField(max_length=8, choices=STATUS_CHOICES, default='CREATED', verbose_name='Статус рассылки')
 
-    # client = models.ManyToManyField(Client, verbose_name='Клиент')
-
-    # user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, **NULLABLE, verbose_name='Пользователь')
-    # message - models.ForeignKey(Message, on_delete=models.CASCADE, **NULLABLE, verbose_name='Сообщение')
-
     def __str__(self):
         return f'Рассылка {self.pk} {self.status}'
 
