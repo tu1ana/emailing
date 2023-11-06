@@ -23,8 +23,7 @@
                             </tr>
                             <tr>
                                 <td>{% for client_item in object.client.all %}
-                                    <br>- {{ client_item.first_name }} {{ client_item.last_name }} ({{ client_item.email
-                                    }})
+                <br>- {{ client_item.first_name }} {{ client_item.last_name }} ({{ client_item.email }})
                                     {% endfor %}
                                 </td>
                                 <td>{{ object.subject }}</td>
