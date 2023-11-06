@@ -1,27 +1,25 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
+<section id="hero" class="d-flex align-items-end">
+    <div class="container position-relative">
 
-<div class="row">
-<!--{% if perms.dogs_app.add_dog %}-->
-<div class="col-12 mb-5">
-   </div>
-<!--{% endif %}-->
-{% for object in object_list %}
-<div class="col-md-4">
-    <div class="card mb-4 box-shadow">
-        <div class="card-header">Лог сообщения {{ object.message.pk }}</div>
-        <div class="card-body">
-            <p class="card-text">{{ object.last_attempt }}</p>
-            <span class="text-muted">{{ object.status }}</span><br>
-            <span class="text-muted">{{ object.server_response }}</span>
-        </div>
-        <div class="card-footer">
-            <a class="btn btn-link" href="{% url 'dogs_app:update_dogs' object.pk %}">Изменить</a>
-            <a class="btn btn-outline-danger float-right" href="{% url 'dogs_app:delete_dogs' object.pk %}">Удалить</a>
+        <div class="row">
+            <div class="col-12 mb-5">
+            </div>
+            {% for object in object_list %}
+            <div class="col-md-6">
+                <div class="card mb-6 box-shadow">
+                    <div class="card-header">Лог сообщения {{ object.message.pk }}</div>
+                    <div class="card-body">
+                        <p><span class="card-text">Последняя попытка отправки: {{ object.last_attempt }}</span></p>
+                        <span class="text-muted">Статус: {{ object.status }}</span><br>
+                        <span class="text-muted">Ответ сервера: {{ object.server_response }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
-</div>
-{% endfor %}
-</div>
+</section>
 {% endblock %}
