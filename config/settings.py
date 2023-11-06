@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'main',
     'django_apscheduler',
     'blog',
-    'users'
+    'users',
+    'django.contrib.sites'
 ]
 
 MIDDLEWARE = [
@@ -154,3 +155,5 @@ CACHES = {
         "LOCATION": os.getenv('CACHE_LOCATION'),
     }
 }
+
+SITE_ID = 1
