@@ -1,29 +1,32 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
-<form method="post" enctype="multipart/form-data" class="row">
-    <div class="col-6">
-        <div class="card">
-            <div class="card-header">
-                {% if object %}
-                Редактировать
-                {% else %}
-                Добавить нового клиента
-                {% endif %}
+<section id="hero" class="d-flex align-items-end">
+    <div class="container position-relative">
+        <form method="post" enctype="multipart/form-data" class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        {% if object %}
+                        Редактировать
+                        {% else %}
+                        Добавить нового клиента
+                        {% endif %}
+                    </div>
+                    <div class="card-body">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-outline-success">
+                            {% if object %}
+                            Сохранить
+                            {% else %}
+                            Добавить
+                            {% endif %}
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="btn btn-outline-success">
-                    {% if object %}
-                    Сохранить
-                    {% else %}
-                    Добавить
-                    {% endif %}
-                </button>
-            </div>
-        </div>
+        </form>
     </div>
-</form>
-    {% endblock %}
+</section>
+{% endblock %}
