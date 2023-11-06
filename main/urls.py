@@ -4,7 +4,7 @@ from django.views.decorators.cache import cache_page
 from main.apps import MainConfig
 from main.views import IndexView, contact, MessageListView, MessageCreateView, MessageDetailView, MessageUpdateView, \
     MessageDeleteView, ClientListView, ClientCreateView, \
-    ClientUpdateView, ClientDeleteView, ClientDetailView, LogListView, EmailingCreateView
+    ClientUpdateView, ClientDeleteView, ClientDetailView, LogListView, EmailingCreateView, toggle_activity_message
 
 app_name = MainConfig.name
 
@@ -23,4 +23,5 @@ urlpatterns = [
     path('client/update/<int:pk>', ClientUpdateView.as_view(), name='client_update'),
     path('client/delete/<int:pk>', ClientDeleteView.as_view(), name='client_delete'),
     path('client/view/<int:pk>', ClientDetailView.as_view(), name='client_view'),
+    path('activity/<int:pk>', toggle_activity_message, name='toggle_activity_message'),
 ]
